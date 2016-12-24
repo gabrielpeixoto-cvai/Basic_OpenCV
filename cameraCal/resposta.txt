@@ -1,0 +1,14 @@
+Análise do código
+
+O código de calibração da câmera começa lendo o arquivo default.xml para adquirir todas as configurações para executar a função runCalibrationAndSave() na qual o software adquire todas as imagens que estão no VID5.xml. Após isso a calibração usando o template do tabuleiro de xadrez é feita e os resultados são salvos (a função runCalibrationAndSave() já executa a calibração e salva os resultados no final).
+
+Considerações sobre a execução
+
+Para executar corretamente o código, são necessários 2 arquivos xmls extras. O primeiro são as configurações padrão e outro diz o local dos frames usados na calibração (amos em anexo). Houve a necessidade de mudar alguns parâmetros na configuração padrão, tais como número de frames e tamanho do tabuleiro de xadrez (as configurações padrão eram 9x6 de tamanho e 25 frames), houve a necessidade de mudar para 8x6 de tamanho e 20 frames.
+
+A saída da execução se encontra abaixo:
+
+Re-projection error reported by calibrateCamera: 1.84407
+Calibration succeeded. avg re projection error = 1.84407
+
+Re-projection error reported by calibrateCamera: 1.84407
